@@ -322,16 +322,12 @@ nav[role="navigation"] {
   nav[role="navigation"] h2 {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 8px;
     z-index: 2;
-    padding: 8px;
     background: transparent;
     font-size: 0.9em;
     text-align: center; }
-    .nav-open nav[role="navigation"] h2 {
-      left: 0;
-      background: rgba(0, 0, 0, 0.05); }
     @media (min-width: 768px) {
       nav[role="navigation"] h2 {
         display: none; } }
@@ -340,63 +336,76 @@ nav[role="navigation"] {
       clear: both;
       content: ""; }
     nav[role="navigation"] h2 a {
-      float: right;
+      display: inline-block;
       position: relative;
-      border-radius: 50%;
-      width: 3em;
-      height: 3em;
-      line-height: 3.2;
+      border-radius: 2em;
+      padding: 0.5em 1em;
       background: rgba(12, 44, 67, 0.5);
-      color: white; }
+      color: white;
+      box-sizing: border-box;
+      opacity: 1;
+      outline: none;
+      transition: opacity 0.2s 0.3s; }
       .nav-open nav[role="navigation"] h2 a {
-        background: rgba(12, 44, 67, 0.25); }
-      nav[role="navigation"] h2 a span {
-        position: absolute;
-        left: -1000em; }
-  nav[role="navigation"] ul {
+        opacity: 0; }
+      nav[role="navigation"] h2 a:before {
+        margin-right: 8px;
+        font-size: 0.9em; }
+  nav[role="navigation"] div.nav-wrap {
     position: absolute;
-    top: -100em;
+    top: -400px;
     left: 0;
     right: 0;
-    z-index: 1;
-    padding: 65px 0 10px;
+    z-index: 3;
+    padding: 0 0 10px;
     background: #5DA9DD;
     text-align: center;
     font-size: 1.05em;
     transition: top 0.3s; }
-    .nav-open nav[role="navigation"] ul {
+    .nav-open nav[role="navigation"] div.nav-wrap {
       top: 0; }
     @media (min-width: 768px) {
-      nav[role="navigation"] ul {
+      nav[role="navigation"] div.nav-wrap {
         position: static;
         padding: 15px 0;
         text-align: left;
         box-shadow: none; } }
-    nav[role="navigation"] ul li {
+    nav[role="navigation"] div.nav-wrap a.close-nav {
+      display: block;
+      margin-bottom: 10px;
+      padding: 1em;
+      background: rgba(12, 44, 67, 0.5);
+      font-weight: 400;
+      font-size: 0.9em;
+      color: white; }
+      nav[role="navigation"] div.nav-wrap a.close-nav:before {
+        margin-right: 8px;
+        font-size: 0.9em; }
+    nav[role="navigation"] div.nav-wrap ul li {
       display: block;
       white-space: nowrap; }
       @media (min-width: 768px) {
-        nav[role="navigation"] ul li {
+        nav[role="navigation"] div.nav-wrap ul li {
           display: inline-block; } }
-      nav[role="navigation"] ul li a {
+      nav[role="navigation"] div.nav-wrap ul li a {
         display: block;
         padding: 0.5em 1.5em;
         font-weight: 700;
         color: #fff;
         outline: none; }
         @media (min-width: 768px) {
-          nav[role="navigation"] ul li a {
+          nav[role="navigation"] div.nav-wrap ul li a {
             border-radius: 10px;
             padding: 0.5em 0.75em; } }
-        nav[role="navigation"] ul li a:hover {
+        nav[role="navigation"] div.nav-wrap ul li a:hover {
           background: rgba(0, 0, 0, 0.05); }
-        nav[role="navigation"] ul li a span {
+        nav[role="navigation"] div.nav-wrap ul li a span {
           position: absolute;
           left: -1000em; }
           @media (min-width: 960px) {
-            nav[role="navigation"] ul li a span {
+            nav[role="navigation"] div.nav-wrap ul li a span {
               position: static; } }
-      nav[role="navigation"] ul li.current a {
+      nav[role="navigation"] div.nav-wrap ul li.current a {
         background: rgba(0, 0, 0, 0.1); }
 
 /* ------------------------------- */
