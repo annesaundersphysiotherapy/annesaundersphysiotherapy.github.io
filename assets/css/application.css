@@ -1,17 +1,6 @@
+/* Variables */
+/* Imports */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background: none;
-  list-style: none;
-  vertical-align: baseline;
-  /*  -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/ }
-
-header, main, aside, section, article, footer {
-  display: block; }
-
 @font-face {
   font-family: 'icomoon';
   src: url("/assets/fonts/icomoon/icomoon.eot?yj3l8l");
@@ -45,14 +34,16 @@ p a[class*="icon-"]:before {
 .icon-twitter:before {
   content: "\e904"; }
 
-/* Variables */
-/* Imports */
-/* General */
-body,
-input, textarea, select,
-h1, h2, h3, h4, h5, h6
-.button {
-  font-family: "Open Sans", "Trebuchet MS", "Lucida Grande", Verdana, Geneva, Sans-Serif; }
+header, main, aside, section, article, footer {
+  display: block; }
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: none;
+  list-style: none;
+  vertical-align: baseline; }
 
 /* Hiding */
 .hide-1 {
