@@ -365,19 +365,32 @@ nav[role="navigation"] {
       display: block;
       margin-bottom: 10px;
       padding: 1em;
-      background: rgba(12, 44, 67, 0.5);
+      background: #113f5f;
       font-weight: 400;
-      font-size: 0.9em;
-      color: white; }
+      font-size: 0.9em; }
+      nav[role="navigation"] div.nav-wrap a.close-nav:hover {
+        color: #eee; }
       nav[role="navigation"] div.nav-wrap a.close-nav:before {
         margin-right: 8px;
         font-size: 0.9em; }
+      @media (min-width: 768px) {
+        nav[role="navigation"] div.nav-wrap a.close-nav {
+          display: none; } }
     nav[role="navigation"] div.nav-wrap ul li {
       display: block;
       white-space: nowrap; }
       @media (min-width: 768px) {
         nav[role="navigation"] div.nav-wrap ul li {
-          display: inline-block; } }
+          display: inline-block; }
+          nav[role="navigation"] div.nav-wrap ul li:after {
+            content: none !important; } }
+      nav[role="navigation"] div.nav-wrap ul li:not(:last-child):after {
+        display: block;
+        margin: 0 auto;
+        height: 1px;
+        line-height: 1px;
+        background: rgba(255, 255, 255, 0.075);
+        content: ""; }
       nav[role="navigation"] div.nav-wrap ul li a {
         display: block;
         padding: 0.5em 1.5em;

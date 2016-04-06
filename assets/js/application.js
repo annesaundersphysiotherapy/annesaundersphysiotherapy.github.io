@@ -18,6 +18,14 @@ var closeNav = function() {
   });
 };
 
+var removeIndexes = function() {
+  $('a').each(function() {
+    var href = $(this).attr('href').replace('index.html','');
+    $(this).attr('href',href);
+  });
+};
+
 setNav();
+removeIndexes();
 
 })(jQuery);
