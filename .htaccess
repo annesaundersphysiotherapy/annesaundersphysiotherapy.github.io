@@ -1,7 +1,7 @@
 RewriteEngine on
 RewriteBase /
 
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+RewriteCond %{REQUEST_URI} /index\.html?$ [NC]
+RewriteRule ^(.*)index\.html?$ "/$1" [NC,R=301,NE,L]
 
 ErrorDocument 404 /404.html
