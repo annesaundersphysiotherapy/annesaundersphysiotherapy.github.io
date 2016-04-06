@@ -1,8 +1,8 @@
 RewriteEngine on
 RewriteBase /
 
-RewriteCond %{REQUEST_URI} !(/$|\.) 
-RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+#RewriteCond %{REQUEST_URI} !(/$|\.) 
+#RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
