@@ -207,9 +207,13 @@ body {
   display: block; }
   @media (min-width: 768px) {
     .columns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; } }
   .columns .column {
-    flex: 1 0;
+    -webkit-flex: 1 0;
+        -ms-flex: 1 0;
+            flex: 1 0;
     position: relative;
     box-sizing: border-box; }
     @media (min-width: 768px) {
@@ -379,16 +383,7 @@ nav[role="navigation"] {
       white-space: nowrap; }
       @media (min-width: 768px) {
         nav[role="navigation"] div.nav-wrap ul li {
-          display: inline-block; }
-          nav[role="navigation"] div.nav-wrap ul li:after {
-            content: none !important; } }
-      nav[role="navigation"] div.nav-wrap ul li:not(:last-child):after {
-        display: block;
-        margin: 0 auto;
-        height: 1px;
-        line-height: 1px;
-        background: rgba(255, 255, 255, 0.075);
-        content: ""; }
+          display: inline-block; } }
       nav[role="navigation"] div.nav-wrap ul li a {
         display: block;
         padding: 0.5em 1.5em;
@@ -601,3 +596,4 @@ table {
     border-bottom-width: 0;
     background: #e5e5e5;
     vertical-align: middle; }
+/*# sourceMappingURL=application.css.map */
