@@ -277,13 +277,11 @@ body {
   display: block; }
   @media (min-width: 769px) {
     .columns {
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; } }
   .columns .column {
-    -webkit-flex: 1 0;
-        -ms-flex: 1 0;
-            flex: 1 0;
+    -ms-flex: 1 0;
+        flex: 1 0;
     position: relative;
     box-sizing: border-box; }
     @media (min-width: 769px) {
@@ -435,7 +433,6 @@ nav[role="navigation"] {
       box-sizing: border-box;
       outline: none; }
       nav[role="navigation"] h2 a span {
-        display: inline-block;
         margin-left: 0.5em; }
         @media (min-width: 769px) {
           nav[role="navigation"] h2 a span {
@@ -449,9 +446,7 @@ nav[role="navigation"] {
     z-index: 4;
     text-align: center;
     opacity: 0;
-    -webkit-transform: translate3d(0, -80px, 0);
-            transform: translate3d(0, -80px, 0);
-    transition: -webkit-transform 0.2s, opacity 0.2s;
+    transform: translate3d(0, -80px, 0);
     transition: transform 0.2s, opacity 0.2s; }
     @media (min-width: 769px) {
       nav[role="navigation"] div.additional-nav {
@@ -459,9 +454,7 @@ nav[role="navigation"] {
         left: -1000em; } }
     nav[role="navigation"] div.additional-nav.show {
       opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      transition: -webkit-transform 0.5s, opacity 0.5s;
+      transform: translate3d(0, 0, 0);
       transition: transform 0.5s, opacity 0.5s;
       transition-delay: 0.1s; }
     nav[role="navigation"] div.additional-nav ul.social {
@@ -505,15 +498,11 @@ nav[role="navigation"] {
       display: block;
       white-space: nowrap;
       opacity: 0;
-      -webkit-transform: translate3d(0, -80px, 0);
-              transform: translate3d(0, -80px, 0);
-      transition: -webkit-transform 0.2s, opacity 0.2s;
+      transform: translate3d(0, -80px, 0);
       transition: transform 0.2s, opacity 0.2s; }
       .nav-open nav[role="navigation"] > ul li {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-        transition: -webkit-transform 0.5s, opacity 0.5s;
+        transform: translate3d(0, 0, 0);
         transition: transform 0.5s, opacity 0.5s;
         transition-delay: 0.025s; }
         .nav-open nav[role="navigation"] > ul li:nth-child(2) {
@@ -533,8 +522,7 @@ nav[role="navigation"] {
           display: inline-block;
           margin: 0;
           opacity: 1;
-          -webkit-transform: none;
-                  transform: none; }
+          transform: none; }
           nav[role="navigation"] > ul li.current a {
             background: rgba(0, 0, 0, 0.1);
             color: white; } }
@@ -701,4 +689,3 @@ table {
     border-bottom-width: 0;
     background: #e5e5e5;
     vertical-align: middle; }
-/*# sourceMappingURL=application.css.map */
